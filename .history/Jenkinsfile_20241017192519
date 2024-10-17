@@ -9,12 +9,8 @@ pipeline {
         SNAP_REPO = 'CI-Jenkins-snapshot'
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'admin123'
-        RELEASE_REPO = 'CI-Jenkins-release'
+        RELEASE_REPO = ''
         CENTRAL_REPO = 'CI-Jenkins-meven-central'
-        NEXUSIP = '172.31.9.47'
-        NEXUSPORT = '8081'
-        NEXUS_GRP_REPO = 'CI-Jenkins-group'
-        NEXUS_LOGIN = 'nexuslogin'
 
     }
 

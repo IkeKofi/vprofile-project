@@ -1,0 +1,20 @@
+
+pipeline {
+    agent any
+    tools{
+        maven "MAVEN3"
+        jdk "OracleJDK8"
+    }
+    environment {
+        SNAP_REPO = 'CI-Jenkins-release'
+        NEXUS_USER = 'admin'
+    }
+
+    stages{
+        stage('Build'){
+            steps {
+                sh 'mvn -s settings.xml -DskipTests install'
+            }
+        }
+    }
+}
